@@ -1,0 +1,122 @@
+mixin productMyasnov(number)
+
+  table(width='100%'): tbody: tr
+    td(style='padding:0;')
+
+      //- **
+      //- Фото товара
+      //- **
+      table(width='100%'): tbody: tr
+        td(align='center')
+          table(width='100%', align='center'): tbody: tr
+            td(style='padding:0px 0px 0px 0px;', align='center')
+
+              a(
+                href='https://www.myasnov.ru/catalog/',
+                e-editable='product' + number + '_link'
+              )
+                img.productMyasnov-img(
+                  src='http://placehold.it/190x190',
+                  width='190',
+                  border='0',
+                  e-editable='product' + number + '_img'
+                )
+
+      table(width='100%', align='center'): tbody: tr
+        td(align='center')
+          table(width='100%', align='center'): tbody: tr
+            td.outlook-fallback-font-family.newFontSize16px(style='font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000000; -ms-text-size-adjust:100%; line-height:150%; padding:15px 10px 15px 10px; text-align:left;', align='left')
+
+              //- **
+              //- Блок Новинка
+              //- **
+              e-optional(name='product' + number + ' Novinka')
+                div(style='text-align: center;', e-editable='product' + number + '_new')
+                  <span style="color: #7A1600;"><strong>НОВИНКА</strong></span>
+
+              //- **
+              //- Ссылка на товар
+              //- **
+              a(
+                href='https://www.myasnov.ru/catalog/',
+                style='text-decoration:underline; color:#7A1600; font-weight:normal; font-style:normal;',
+                e-editable='product' + number + '_link'
+              )
+                span(e-editable='product' + number + '_title') Ссылка на товар
+
+              //- **
+              //- Блок Цена без иконки акций
+              //- **
+              e-optional(name='product' + number + ' Bez aktcii')
+                br
+                span(style='font-size:20px;', e-editable='product' + number + '_price') 000 ք/кг
+                br
+
+              //- **
+              //- Блок Лучшая цена
+              //- **
+              e-optional(name='product' + number + ' Luchshaya cena')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='По акции Лучшая цена', src='https://www.myasnov.ru/aicons/superprice.png')
+                  td.productMyasnov__price( e-editable='product' + number + '_LC_price', valign='middle', align='left')
+                    <span style="text-decoration: line-through;">000</span> <span style="font-size:20px;">000 ք/кг</span>
+
+              //- **
+              //- Блок Большие КеГЛи
+              //- **
+              e-optional(name='product' + number + ' Bolshiye KeGLi')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='По акции Большие КеГЛи', src='https://www.myasnov.ru/aicons/big_kgl_alco.png')
+                  td.productMyasnov__price( e-editable='product' + number + '_BK_price', valign='middle', align='left')
+                    <span style="font-size:20px;">000 ք/кг</span><br>
+                    <span>000 КеГЛей</span>
+
+              //- **
+              //- Блок В 5 раз больше КеГЛей
+              //- **
+              e-optional(name='product' + number + ' V 5 raz bolshe KeGLey')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='В 5 раз больше КеГЛей', src='https://www.myasnov.ru/aicons/x5.png')
+                  td.productMyasnov__price( e-editable='product' + number + '_5X_price', valign='middle', align='left')
+                    <span style="font-size:20px;">000 ք/кг</span><br>
+                    <span>000 КеГЛей</span>
+
+              //- **
+              //- Блок В 10 раз больше КеГЛей
+              //- **
+              e-optional(name='product' + number + ' V 10 raz bolshe KeGLey')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='В 10 раз больше КеГЛей', src='https://www.myasnov.ru/aicons/x10.png')
+                  td.productMyasnov__price(e-editable='product' + number + '_10X_price', valign='middle', align='left')
+                    <span style="font-size:20px;">000 ք/кг</span><br>
+                    <span>000 КеГЛей</span>
+
+              //- **
+              //- Блок 2+1
+              //- **
+              e-optional(name='product' + number + ' 2+1')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='По акции 2+1', src='https://www.myasnov.ru/aicons/2+1.png')
+                  td.productMyasnov__price( e-editable='product' + number + '_2-1_price', valign='middle', align='left')
+                    <span style="text-decoration: line-through;">000</span> <span style="font-size:20px;">000 ք/кг</span>
+
+              //- **
+              //- Блок 3+1
+              //- **
+              e-optional(name='product' + number + ' 3+1')
+                table(width='100%'): tbody: tr
+                  td(width='50', valign='middle')
+                    img(alt='По акции 3+1', src='https://www.myasnov.ru/aicons/3+1.png')
+                  td.productMyasnov__price( e-editable='product' + number + '_3-1_price', valign='middle', align='left')
+                    <span style="text-decoration: line-through;">000</span> <span style="font-size:20px;">000 ք/кг</span>
+
+              //- **
+              //- Текст под акцией
+              //- **
+              e-optional(name='product' + number + ' Opisanie')
+                span(e-editable='product' + number + '_description') текст

@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+
+
+* {box-sizing: border-box;-moz-box-sizing: border-box;}
+
+p{ margin:10px 0; padding:0;}
+table{border-collapse:collapse;}
+h1, h2, h3, h4, h5, h6{display:block; margin:0; padding:0;}
+img, a img{border:0; height:auto; outline:none; text-decoration:none;}
+body, #bodyTable, #bodyCell{height:100%; margin:0 !important; padding:0 !important; width:100%;}
+
+
+body{
+
+	background-color: #ffffff;
+}
+
+body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-line-height-rule:exactly; }
+div[style*="margin: 16px 0"] { margin:0 !important; }
+table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; table-layout:fixed; } /* Remove spacing between tables in Outlook Desktop. */
+table { margin:0 auto; } /* Yahoo fix, centering tables */
+table table { table-layout: auto; }
+img { -ms-interpolation-mode:bicubic; } /* Force IE to smoothly render resized images. */
+a[x-apple-data-detectors]{ /* Force iOS devices to heed link styles set in CSS. */
+	color:inherit !important;
+	text-decoration:none !important;
+	font-size:inherit !important;
+	font-family:inherit !important;
+	font-weight:inherit !important;
+	line-height:inherit !important;
+}
+#outlook a { padding:0; } /* Force Outlook 2007 and up to provide a "view in browser" message. */
+.ExternalClass { width: 100%; }
+.ExternalClass * {line-height: 100%;}
+
+.textbox a {
+	text-decoration:underline;
+  	color:#ED1848;
+  	font-weight:normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .socials{
+  	text-align: center;
+  }
+}
+
+//  Добавить в emarsys
+@import 'css-blocks/*.scss';

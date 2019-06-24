@@ -1,0 +1,20 @@
+include ../pug-mixins/otstup
+link(rel="stylesheet", href="../css-blocks/30-text-align-left.css")
+
+table(width='100%', align='center'): tbody: tr
+  td(align='center')
+
+    +otstup('Verhniy otstup')
+
+    table(width='100%', align='center', style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;'): tbody: tr
+      td.textbox(align='left')
+
+        e-optional(name='Zagolovok')
+          div(style='text-align: center;')
+            span(e-editable='text-title') Заголовок
+            br
+            br
+
+        span(e-editable='text') Текст
+
+    +otstup('Nizhniy otstup')

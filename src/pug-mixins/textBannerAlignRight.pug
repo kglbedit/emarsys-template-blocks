@@ -1,0 +1,15 @@
+mixin textBannerAlignRight
+
+  table(width='100%'): tbody: tr
+    td(style='padding:0;')
+      table(width='100%', align='center'): tbody: tr
+        td(align='center')
+          table(style='border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;', width='100%', align='center'): tbody: tr
+            td.outlook-fallback-font-family.newFontSize16px(style='font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000000; -ms-text-size-adjust:100%; line-height:150%; padding:15px 10px 15px 10px; text-align:left;', align='left')
+
+              e-optional(name='Zagolovok')
+                span(style='font-size: 18px;color: #80BA27;', e-editable='title-text')
+                  strong ЗАГОЛОВОК
+                br
+
+              span(e-editable='text') Текст
